@@ -1,0 +1,37 @@
+This file conatains the encrypted and decrypted messages at every stage till finding the final message.
+
+
+After scanning the QRCode in the aadhar card we get: 
+R3JlYXQgam9iLiBKdWxpdXMgQ2Flc2VyIHdhcyBib3JuIGluIHRoZSAxMDAgQkM6ClBEQSBKQVRQIFlFTERBTiBHQVVPTVFXTkEgRU8gUERBIFdITERXWEFQTyBTRVBES1FQIEYKT1BYV09EUFNLUUxPTkNYUU5VSkVPTFhQV0FFSE1PVVpPRVFYWFZLVUpPV0JMTVdYUFFVSU9FTFBNWUtZRUhNT0dPS1lRWEFYS1lLRExZUVpZTFlIQVdXQkxNV1hRWUxXVldPWQ==
+
+After converting the base64 string to raw data we get:
+
+Great job. Julius Caeser was born in the 100 BC:
+PDA JATP YELDAN GAUOMQWNA EO PDA WHLDWXAPO SEPDKQP F
+OPXWODPSKQLONCXQNUJEOLXPWAEHMOUZOEQXXVKUJOWBLMWXPQUIOELPMYKYEHMOGOKYQXAXKYKDLYQZYLYHAWWBLMWXQYLWVWOY
+
+After rotaing the character by 4 values after according to the order in alphabet we get:
+
+Kviex nsf. Nypmyw Geiwiv aew fsvr mr xli 100 FG:
+THE NEXT CIPHER KEYSQUARE IS THE ALPHABETS WITHOUT J
+STBASHTWOUPSRGBURYNISPBTAEILQSYDSIUBBZOYNSAFPQABTUYMSIPTQCOCILQSKSOCUBEBOCOHPCUDCPCLEAAFPQABUCPAZASC
+
+After decoding the next line using playfair cipher algorithm we get:
+RSAENCRYPTNUMBERTWOHUNDREDFOURTYTHREEWITHNVALUEASTWOTHOUSANDFOURHUNDREDANDNINETEENANDEVALUEASELEVENX
+
+Which says: RSA ENCRYPT NUMBER TWO HUNDRED FOURTY THREE WITH N VALUE AS TWO THOUSAND FOUR HUNDRED AND NINETEEN AND E VALUE AS ELEVEN X
+
+After RSA encrypting the number 243 with n = 20419 and e = 11 we get:
+(243^(11))%2419 = 1982
+
+The pin to open the zipped file : 1982
+
+After opening the zip file we have the text (from the textfile inside the zip): 
+TM, DTZ KTZSI RJ😔. HTSLWFYX. YMNX NX YMJ JSILTFQ. TW NX NY?🤨
+
+After rotating the character by 21 values according to the order in alphabet we get:
+OH, YOU FOUND ME😔. CONGRATS. THIS IS THE ENDGOAL. OR IS IT?🤨
+
+
+<-- The final message = OH, YOU FOUND ME😔. CONGRATS. THIS IS THE ENDGOAL. OR IS IT?🤨 -->
+   
