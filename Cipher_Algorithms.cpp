@@ -1,3 +1,15 @@
+/*
+ * This file contains the implementation of the algorithms used to create ciphers.
+ * 
+ * That includes:
+ * -------------------------------
+ * caesar cipher
+ * RSA encryp and decrypt
+ * base64 encrypt and ecrypt
+ * -------------------------------
+ * 
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -8,13 +20,17 @@ const string menu = "Enter 1 to print menu\n"
                     "Enter 4 to decode it from base64\n"
                     "Enter 5 to RSA encrypt a number\n"
                     "Enter 6 to RSA decrypt a number\n"
-                    "Enter 7 to keysquare encrypt a number\n"
-                    "Enter 8 to keysquare decrypt a number\n"
-                    "Enter 9 to end program\n"
+                    "Enter 7 to end program\n"
                     "-->";
 
 const string charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
+
+/*
+ * The function binpow() is used for RSA encryption and ecryption.
+ * It uses the concept of binary exponentiation under modulus.
+ * It takes three parameters , the number to be encrypted/decrypted (a), the encryption key(b), the modulo number(m)
+ */
 
 long long binpow(long long a, long long b, long long m)
 {
@@ -30,6 +46,11 @@ long long binpow(long long a, long long b, long long m)
     return res;
 }
 
+
+/*
+ * The function rotateCharacters is used to rotate every character by some factor.
+ */
+
 void rotateCharacters(string s, int val)
 {
 
@@ -42,6 +63,10 @@ void rotateCharacters(string s, int val)
     cout << s << endl;
     return;
 }
+
+/*
+ * The function encodeToBase64 is used to encode the givent text into base64. 
+ */
 
 void encodeToBase64(string str)
 {
@@ -113,6 +138,10 @@ int findIndexInCharSet(char c)
     }
     return -1;
 }
+
+/*
+ * The function decodeToBase64 is used to decode the given base64 into raw data text. 
+ */
 
 void decodeFromBase64(string str)
 {
@@ -229,10 +258,6 @@ int main()
         }
 
         case 7:
-        
-        case 8:
-
-        case 9:
             return 0;
 
         default:
