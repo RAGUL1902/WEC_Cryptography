@@ -1,7 +1,7 @@
 This file conatains the encrypted and decrypted messages at every stage till finding the final message.
 
 
-After scanning the QRCode in the aadhar card we get: 
+After scanning the QRCode in the Vaccination certificate we get: 
 R3JlYXQgam9iLiBKdWxpdXMgQ2Flc2VyIHdhcyBib3JuIGluIHRoZSAxMDAgQkM6ClBEQSBKQVRQIFlFTERBTiBHQVVPTVFXTkEgRU8gUERBIFdITERXWEFQTyBTRVBES1FQIEYKT1BYV09EUFNLUUxPTkNYUU5VSkVPTFhQV0FFSE1PVVpPRVFYWFZLVUpPV0JMTVdYUFFVSU9FTFBNWUtZRUhNT0dPS1lRWEFYS1lLRExZUVpZTFlIQVdXQkxNV1hRWUxXVldPWQ==
 
 After converting the base64 string to raw data we get:
